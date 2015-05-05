@@ -21,6 +21,15 @@ let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
 
+""""""""""""""""""""""""""""""
+" => fugitive plugin
+""""""""""""""""""""""""""""""
+set diffopt+=vertical
+
+""""""""""""""""""""""""""""""
+" => ctags plugin
+""""""""""""""""""""""""""""""
+set tags=tags;/
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
@@ -53,13 +62,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 
 
 """"""""""""""""""""""""""""""
-" => ZenCoding
-""""""""""""""""""""""""""""""
-" Enable all functions in all modes
-let g:user_zen_mode='a'
-
-
-""""""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
 ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
@@ -76,9 +78,6 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
-let NERDTreeIgnore = ['\.pyc$']
-let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
@@ -103,16 +102,21 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme="luna"
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimroom
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:goyo_width=100
-let g:goyo_margin_top = 2
-let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader>z :Goyo<cr>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers=['pyflakes']
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => clang_complete
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:clang_library_path='/usr/lib/x86_64-linux-gnu'
+let g:clang_complete_auto = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => AutoComplPop
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:acp_behaviorKeywordLength = 3

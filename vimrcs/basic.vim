@@ -139,6 +139,16 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Linenumbers for every document
+set nu
+
+" Autocompletion
+set wildmode=longest,list,full
+set wildmenu
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -284,7 +294,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-map 0 ^
+"map 0 ^
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
@@ -429,3 +439,4 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
