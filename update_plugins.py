@@ -19,13 +19,14 @@ open_file_under_cursor.vim https://github.com/amix/open_file_under_cursor.vim
 peaksea https://github.com/vim-scripts/peaksea
 snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 syntastic https://github.com/scrooloose/syntastic
+tabline.vim https://github.com/mkitt/tabline.vim
 taglist.vim https://github.com/vim-scripts/taglist.vim
-tabline https://github.com/mkitt/tabline.vim
 tlib https://github.com/vim-scripts/tlib
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
 vim-airline https://github.com/bling/vim-airline
 vim-colors-solarized https://github.com/altercation/vim-colors-solarized
 vim-commentary https://github.com/tpope/vim-commentary
+vim-easy-align https://github.com/junegunn/vim-easy-align.git
 vim-fugitive https://github.com/tpope/vim-fugitive
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
 vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
