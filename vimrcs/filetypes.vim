@@ -54,3 +54,9 @@ endfunction
 au FileType coffee call CoffeeScriptFold()
 
 au FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
+""""""""""""""""""""""""""""""
+" => Commentary
+"""""""""""""""""""""""""""""""
+autocmd FileType vhdl setlocal commentstring=--%s
+autocmd FileType matlab setlocal commentstring=%%s

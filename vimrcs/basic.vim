@@ -156,12 +156,12 @@ set wildmenu
 " Enable syntax highlighting
 syntax enable 
 
-try
-    colorscheme desert
-catch
-endtry
+" try
+"     colorscheme solarized
+" catch
+" endtry
 
-set background=dark
+" set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
