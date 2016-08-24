@@ -85,6 +85,7 @@ set wildmenu
 set wildignore=*.o,*~,*.pyc
 if has("win16") || has("win32")
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cmake,*.a,*.odg,*.png     " MacOSX/Linux
 else
     set wildignore+=.git\*,.hg\*,.svn\*
 endif
@@ -199,10 +200,11 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+set expandtab
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
+" Linebreak on 120 characters
+set linebreak
+set textwidth=120
 
 set ai "Auto indent
 set si "Smart indent
