@@ -122,7 +122,6 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -149,3 +148,20 @@ endfunc
 func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
+
+
+"" This function increments a column (!) of numbers (Select in visual block mode and press CTRL-A
+" 0 -> 0
+" 0 -> 1
+" 0 -> 2
+" 0 -> 3
+" ...
+function! Incr()
+  let a = line('.') - line("'<")
+  let c = virtcol("'<")
+  if a > 0
+    execute 'normal! '.c.'|'.a."\<C-a>"
+  endif
+  normal `<
+endfunction
+vnoremap <C-a> :call Incr()<CR>
