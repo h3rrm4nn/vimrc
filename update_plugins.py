@@ -23,12 +23,15 @@ tabline.vim https://github.com/mkitt/tabline.vim
 taglist.vim https://github.com/vim-scripts/taglist.vim
 tlib https://github.com/vim-scripts/tlib
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
+VHDL-indent-93-syntax https://github.com/vim-scripts/VHDL-indent-93-syntax
 vim-airline https://github.com/bling/vim-airline
+vim-airline-themes https://github.com/vim-airline/vim-airline-themes
 vim-colors-solarized https://github.com/altercation/vim-colors-solarized
-vim-commentary https://github.com/tpope/vim-commentary
+vim-commentary https://github.com/tpope/vim-commentary.git
 vim-easy-align https://github.com/junegunn/vim-easy-align.git
 vim-fugitive https://github.com/tpope/vim-fugitive
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
+vim-latex https://github.com/vim-latex/vim-latex.git
 vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
 vim-repeat https://github.com/tpope/vim-repeat
 vim-snipmate https://github.com/garbas/vim-snipmate
