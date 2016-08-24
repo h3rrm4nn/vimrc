@@ -51,14 +51,15 @@ endif
 """"""""""""""""""""""""""""""
 " => CTRL-P
 """"""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
-
 let g:ctrlp_map = '<c-f>'
 map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 
+let g:ctrlp_working_path_mode = 'ra' " set working path to first occurence of .git .svn etc.
+
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 
 """"""""""""""""""""""""""""""
@@ -144,12 +145,24 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vim-hdl
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Configure the project file
+" This shitty plugin is not working, I assume it is related to the python version
+" let g:vimhdl_conf_file = '~/Simulation/fsd.hardware/test.prj'
+" Tell Syntastic to use vim-hdl
+" let g:syntastic_vhdl_checkers = ['vimhdl']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-Latex
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
+
+" set the textwidth for latex files
+autocmd FileType tex setlocal textwidth=80
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
 " can be called correctly.
