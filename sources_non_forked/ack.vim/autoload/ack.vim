@@ -1,3 +1,7 @@
+if exists('g:autoloaded_ack') || &cp
+  finish
+endif
+
 if exists('g:ack_use_dispatch')
   if g:ack_use_dispatch && !exists(':Dispatch')
     call s:Warn('Dispatch not loaded! Falling back to g:ack_use_dispatch = 0.')
@@ -5,7 +9,7 @@ if exists('g:ack_use_dispatch')
   endif
 else
   let g:ack_use_dispatch = 0
-end
+endif
 
 "-----------------------------------------------------------------------------
 " Public API
@@ -26,12 +30,22 @@ function! ack#Ack(cmd, args) "{{{
     let l:grepformat = '%f'
   endif
 
-  " If no pattern is provided, search for the word under the cursor
+  " Check user policy for blank searches
   if empty(a:args)
-    let l:grepargs = expand("<cword>")
-  else
-    let l:grepargs = a:args . join(a:000, ' ')
-  end
+    if !g:ack_use_cword_for_empty_search
+      echo "No regular expression found."
+      return
+    endif
+  endif
+
+  " If no pattern is provided, search for the word under the cursor
+  let l:grepargs = empty(a:args) ? expand("<cword>") : a:args . join(a:000, ' ')
+
+  "Bypass search if cursor is on blank string
+  if l:grepargs == ""
+    echo "No regular expression found."
+    return
+  endif
 
   " NOTE: we escape special chars, but not everything using shellescape to
   "       allow for passing arguments etc
@@ -118,6 +132,8 @@ function! s:ApplyMappings() "{{{
   if exists("g:ackpreview") " if auto preview in on, remap j and k keys
     nnoremap <buffer> <silent> j j<CR><C-W><C-W>
     nnoremap <buffer> <silent> k k<CR><C-W><C-W>
+    nmap <buffer> <silent> <Down> j
+    nmap <buffer> <silent> <Up> k
   endif
 endfunction "}}}
 
@@ -157,17 +173,11 @@ function! s:QuickHelp() "{{{
   execute 'edit' globpath(&rtp, 'doc/ack_quick_help.txt')
 
   silent normal gg
-  setlocal buftype=nofile
-  setlocal bufhidden=hide
-  setlocal noswapfile
-  setlocal nobuflisted
-  setlocal nomodifiable
+  setlocal buftype=nofile bufhidden=hide nobuflisted
+  setlocal nomodifiable noswapfile
   setlocal filetype=help
-  setlocal nonumber
-  setlocal norelativenumber
-  setlocal nowrap
-  setlocal foldlevel=20
-  setlocal foldmethod=diff
+  setlocal nonumber norelativenumber nowrap
+  setlocal foldmethod=diff foldlevel=20
 
   nnoremap <buffer> <silent> ? :q!<CR>:call ack#ShowResults()<CR>
 endfunction "}}}
@@ -232,4 +242,5 @@ function! s:Warn(msg) "{{{
   echohl WarningMsg | echomsg 'Ack: ' . a:msg | echohl None
 endf "}}}
 
+let g:autoloaded_ack = 1
 " vim:set et sw=2 ts=2 tw=78 fdm=marker

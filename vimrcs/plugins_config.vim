@@ -140,10 +140,10 @@ let g:acp_behaviorKeywordLength = 3
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:solarized_termcolors=256
-syntax enable
-set background=dark
-colorscheme solarized
+" let g:solarized_termcolors=256
+" syntax enable
+" set background=dark
+" colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-hdl

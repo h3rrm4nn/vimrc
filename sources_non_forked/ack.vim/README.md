@@ -4,7 +4,7 @@ Run your favorite search tool from Vim, with an enhanced results list.
 
 This plugin was designed as a Vim frontend for the Perl module [App::Ack]. Ack
 can be used as a replacement for 99% of the uses of _grep_. The plugin allows
-you to run ack from vim, and shows the results in a split window.
+you to run ack from Vim, and shows the results in a split window.
 
 But here's a little secret for the Vim-seasoned: it's just a light wrapper for
 Vim's [grepprg] and the [quickfix] window for match results. This makes it easy
@@ -28,13 +28,21 @@ It is recommended to use one of the popular plugin managers for Vim. There are
 many and you probably already have a preferred one, but a few examples for your
 copy-and-paste convenience:
 
+#### Pathogen
+
+    $ git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
+
 #### Vundle
 
-    Plugin 'mileszs/ack.vim'
+```vim
+Plugin 'mileszs/ack.vim'
+```
 
 #### NeoBundle
 
-    NeoBundle 'mileszs/ack.vim'
+```vim
+NeoBundle 'mileszs/ack.vim'
+```
 
 #### Manual (not recommended)
 
@@ -114,20 +122,25 @@ nice code clean-up (which ack.vim is now hopefully getting), and ack.vim picked
 up a few features that haven't made their way to ag.vim, like `:AckWindow`,
 optional background search execution with [vim-dispatch], and auto-previewing.
 
+#### I don't want to jump to the first result automatically. ####
+
+Use `:Ack!`, with bang. If you want this behavior most of the time, you might
+like an abbreviation or mapping in your personal config, something like these:
+
+```vim
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+```
+
+Most of the `:[L]Ack*` commands support this. Note that this behavior follows
+the convention of Vim's built-in `:grep` and `:make` commands.
+
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [sadface]: https://github.com/mileszs/ack.vim/commit/d97090fb502d40229e6976dfec0e06636ba227d5#commitcomment-5771145
 
 ## Changelog
 
 Please see [the Github releases page][releases].
-
-### 1.0.9 (unreleased)
-
-* Fix location list and layout of quickfix when using Dispatch (#154)
-* Fix the quick help overlay clobbering the list mappings
-* Fix `:AckFile` when using Dispatch
-* Restore original `'makeprg'` and `'errorformat'` when using Dispatch
-* Internal refactoring and clean-up
 
 ## Credits
 

@@ -302,6 +302,10 @@ elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
     let s:base03      = "234"
     let s:base02      = "235"
+    if &background == "dark"
+        let s:base03      = "NONE"
+        let s:base02      = "NONE"
+    endif
     let s:base01      = "239"
     let s:base00      = "240"
     let s:base0       = "244"
