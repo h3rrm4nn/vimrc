@@ -64,3 +64,6 @@
 [submodule "sources_non_forked/vim-easy-align"]
 	path = sources_non_forked/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "sources_non_forked/vim-fugitive"]
+	path = sources_non_forked/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
