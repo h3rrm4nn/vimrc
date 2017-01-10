@@ -144,6 +144,7 @@ let g:acp_behaviorKeywordLength = 3
 " syntax enable
 " set background=dark
 " colorscheme solarized
+let g:solarized_termtrans=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-hdl
@@ -180,3 +181,9 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+autocmd Filetype tex setlocal nofoldenable
+let g:Tex_DefaultTargetFormat='pdf'
+
+" Taglist modification required for ctags and VHDL
+let g:tlist_vhdl_settings   = 'vhdl;d:package declarations;b:package bodies;e:entities;a:architecture specifications;t:type declarations;p:processes;f:functions;m:port maps;r:procedures'
