@@ -19,3 +19,6 @@
 [submodule "sources_non_forked/mru.vim"]
 	path = sources_non_forked/mru.vim
 	url = https://github.com/vim-scripts/mru.vim
+[submodule "sources_non_forked/nerdtree"]
+	path = sources_non_forked/nerdtree
+	url = https://github.com/scrooloose/nerdtree
