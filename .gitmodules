@@ -43,3 +43,6 @@
 [submodule "sources_non_forked/tlib"]
 	path = sources_non_forked/tlib
 	url = https://github.com/vim-scripts/tlib
+[submodule "sources_non_forked/VHDL-indent-93-syntax"]
+	path = sources_non_forked/VHDL-indent-93-syntax
+	url = https://github.com/vim-scripts/VHDL-indent-93-syntax
