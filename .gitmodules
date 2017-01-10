@@ -46,3 +46,6 @@
 [submodule "sources_non_forked/VHDL-indent-93-syntax"]
 	path = sources_non_forked/VHDL-indent-93-syntax
 	url = https://github.com/vim-scripts/VHDL-indent-93-syntax
+[submodule "sources_non_forked/vim-addon-mw-utils"]
+	path = sources_non_forked/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils
