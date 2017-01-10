@@ -49,3 +49,6 @@
 [submodule "sources_non_forked/vim-addon-mw-utils"]
 	path = sources_non_forked/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils
+[submodule "sources_non_forked/vim-airline"]
+	path = sources_non_forked/vim-airline
+	url = https://github.com/bling/vim-airline
