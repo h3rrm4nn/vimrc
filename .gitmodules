@@ -79,3 +79,6 @@
 [submodule "sources_non_forked/vim-repeat"]
 	path = sources_non_forked/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "sources_non_forked/vim-snipmate"]
+	path = sources_non_forked/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate
