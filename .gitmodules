@@ -40,3 +40,6 @@
 [submodule "sources_non_forked/taglist.vim"]
 	path = sources_non_forked/taglist.vim
 	url = https://github.com/vim-scripts/taglist.vim
+[submodule "sources_non_forked/tlib"]
+	path = sources_non_forked/tlib
+	url = https://github.com/vim-scripts/tlib
