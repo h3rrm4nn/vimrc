@@ -7,3 +7,6 @@
 [submodule "sources_non_forked/AutoComplPop"]
 	path = sources_non_forked/AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop
+[submodule "sources_non_forked/bufexplorer"]
+	path = sources_non_forked/bufexplorer
+	url = https://github.com/corntrace/bufexplorer
