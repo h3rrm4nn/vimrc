@@ -34,3 +34,6 @@
 [submodule "sources_non_forked/syntastic"]
 	path = sources_non_forked/syntastic
 	url = https://github.com/scrooloose/syntastic
+[submodule "sources_non_forked/tabline.vim"]
+	path = sources_non_forked/tabline.vim
+	url = https://github.com/mkitt/tabline.vim
