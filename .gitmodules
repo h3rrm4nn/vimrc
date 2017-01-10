@@ -13,3 +13,6 @@
 [submodule "sources_non_forked/clang_complete"]
 	path = sources_non_forked/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete
+[submodule "sources_non_forked/ctrlp.vim"]
+	path = sources_non_forked/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
