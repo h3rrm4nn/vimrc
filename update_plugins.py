@@ -12,6 +12,7 @@ ack.vim https://github.com/mileszs/ack.vim
 AutoComplPop https://github.com/vim-scripts/AutoComplPop
 bufexplorer https://github.com/corntrace/bufexplorer
 clang_complete https://github.com/Rip-Rip/clang_complete
+Conque-GDB https://github.com/vim-scripts/Conque-GDB
 ctrlp.vim https://github.com/kien/ctrlp.vim
 mru.vim https://github.com/vim-scripts/mru.vim
 nerdtree https://github.com/scrooloose/nerdtree
@@ -22,8 +23,8 @@ syntastic https://github.com/scrooloose/syntastic
 tabline.vim https://github.com/mkitt/tabline.vim
 taglist.vim https://github.com/vim-scripts/taglist.vim
 tlib https://github.com/vim-scripts/tlib
-vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
 VHDL-indent-93-syntax https://github.com/vim-scripts/VHDL-indent-93-syntax
+vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
 vim-airline https://github.com/bling/vim-airline
 vim-airline-themes https://github.com/vim-airline/vim-airline-themes
 vim-colors-solarized https://github.com/altercation/vim-colors-solarized
@@ -36,6 +37,7 @@ vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
 vim-repeat https://github.com/tpope/vim-repeat
 vim-snipmate https://github.com/garbas/vim-snipmate
 vim-snippets https://github.com/honza/vim-snippets
+vim-unimpaired https://github.com/tpope/vim-unimpaired
 YankRing https://github.com/vim-scripts/YankRing.vim
 
 """.strip()
