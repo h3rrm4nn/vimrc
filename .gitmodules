@@ -28,3 +28,6 @@
 [submodule "sources_non_forked/peaksea"]
 	path = sources_non_forked/peaksea
 	url = https://github.com/vim-scripts/peaksea
+[submodule "sources_non_forked/snipmate-snippets"]
+	path = sources_non_forked/snipmate-snippets
+	url = https://github.com/scrooloose/snipmate-snippets
