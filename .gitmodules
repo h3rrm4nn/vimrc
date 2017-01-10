@@ -31,3 +31,6 @@
 [submodule "sources_non_forked/snipmate-snippets"]
 	path = sources_non_forked/snipmate-snippets
 	url = https://github.com/scrooloose/snipmate-snippets
+[submodule "sources_non_forked/syntastic"]
+	path = sources_non_forked/syntastic
+	url = https://github.com/scrooloose/syntastic
