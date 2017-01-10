@@ -10,3 +10,6 @@
 [submodule "sources_non_forked/bufexplorer"]
 	path = sources_non_forked/bufexplorer
 	url = https://github.com/corntrace/bufexplorer
+[submodule "sources_non_forked/clang_complete"]
+	path = sources_non_forked/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete
