@@ -33,15 +33,17 @@ set guioptions-=L
 
 " Colorscheme
 if has("gui_running")
-    let g:solarized_termcolors=256
+    " let g:solarized_termcolors=256
     syntax enable
     set background=dark
-    colorscheme solarized
+    " colorscheme solarized
+	colorscheme gruvbox
 else
-    let g:solarized_termcolors=256
+    " let g:solarized_termcolors=256
     syntax enable
     set background=dark
-    colorscheme solarized
+    " colorscheme solarized
+	colorscheme gruvbox
 endif
 
 

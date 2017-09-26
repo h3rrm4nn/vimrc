@@ -91,3 +91,12 @@
 [submodule "sources_non_forked/YankRing.vim"]
 	path = sources_non_forked/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim
+[submodule "sources_non_forked/darcula"]
+	path = sources_non_forked/darcula
+	url = https://github.com/blueshirts/darcula.git
+[submodule "sources_non_forked/vim-railscasts-theme"]
+	path = sources_non_forked/vim-railscasts-theme
+	url = https://github.com/jpo/vim-railscasts-theme.git
+[submodule "sources_non_forked/gruvbox"]
+	path = sources_non_forked/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
