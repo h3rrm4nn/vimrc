@@ -100,3 +100,6 @@
 [submodule "sources_non_forked/gruvbox"]
 	path = sources_non_forked/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "sources_non_forked/urxvt-vim-insert"]
+	path = sources_non_forked/urxvt-vim-insert
+	url = https://github.com/seletskiy/urxvt-vim-insert.git
