@@ -70,9 +70,6 @@
 [submodule "sources_non_forked/vim-indent-object"]
 	path = sources_non_forked/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
-[submodule "sources_non_forked/vim-latex"]
-	path = sources_non_forked/vim-latex
-	url = https://github.com/vim-latex/vim-latex.git
 [submodule "sources_non_forked/vim-multiple-cursors"]
 	path = sources_non_forked/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
