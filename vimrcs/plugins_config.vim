@@ -161,10 +161,12 @@ let g:solarized_termtrans=1
 " => Vim-Latex
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd Filetype tex setlocal nofoldenable
+autocmd FileType tex setlocal textwidth=80
 
 let g:vimtex_view_method = 'mupdf'
 let g:vimtex_compiler_latexmk = {'callback' : 0} 
 let g:tex_conceal = ""
+" set the textwidth for latex files
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vimify

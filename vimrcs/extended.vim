@@ -37,13 +37,13 @@ if has("gui_running")
     syntax enable
     set background=dark
     " colorscheme solarized
-	colorscheme gruvbox
+	colorscheme bubblegum-256-dark
 else
     " let g:solarized_termcolors=256
     syntax enable
     set background=dark
     " colorscheme solarized
-	colorscheme gruvbox
+	colorscheme bubblegum-256-dark
 endif
 
 
