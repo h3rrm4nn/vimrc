@@ -1,3 +1,6 @@
-cd ~/.vim_runtime
-cat ~/.vim_runtime/vimrcs/basic.vim > ~/.vimrc
-echo "Installed the Basic Vim configuration successfully! Enjoy :-)"
+VIMRC=~/.vimrc
+if test -f "$VIMRC"; then
+    rm $VIMRC
+fi
+ln -s vimrcs/basic.vim .vimrc
+echo "Installed the basic Vim configuration."
