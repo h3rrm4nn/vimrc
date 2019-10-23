@@ -1,6 +1,4 @@
+VIMRC_BASIC=~/vimrc/vimrcs/basic.vim
 VIMRC=~/.vimrc
-if test -f "$VIMRC"; then
-    rm $VIMRC
-fi
-ln -s vimrcs/basic.vim .vimrc
+cat $VIMRC_BASIC > $VIMRC
 echo "Installed the basic Vim configuration."

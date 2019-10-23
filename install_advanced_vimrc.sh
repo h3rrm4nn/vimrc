@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo 'set runtimepath+=~/vimrc
+echo "set runtimepath+=~/vimrc
+let g:vimrcpath='~/vimrc'
 
 runtime vimrcs/basic.vim
 runtime vimrcs/filetypes.vim
@@ -10,6 +11,6 @@ runtime vimrcs/extended.vim
 try
 runtime my_configs.vim
 catch
-endtry' > ~/.vimrc
+endtry" > ~/.vimrc
 
 echo "Installed the advanced Vim configuration."
