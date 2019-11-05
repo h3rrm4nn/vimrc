@@ -103,9 +103,6 @@
 [submodule "sources_non_forked/nord-vim"]
 	path = sources_non_forked/nord-vim
 	url = git://github.com/arcticicestudio/nord-vim.git
-[submodule "sources_non_forked/vimify"]
-	path = sources_non_forked/vimify
-	url = https://github.com/HendrikPetertje/vimify.git
 [submodule "sources_non_forked/julia-vim"]
 	path = sources_non_forked/julia-vim
 	url = git://github.com/JuliaEditorSupport/julia-vim.git
