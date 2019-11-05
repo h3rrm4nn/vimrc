@@ -106,6 +106,3 @@
 [submodule "sources_non_forked/julia-vim"]
 	path = modules/julia-vim
 	url = git://github.com/JuliaEditorSupport/julia-vim.git
-[submodule "sources_non_forked/bubblegum"]
-	path = modules/bubblegum
-	url = https://github.com/baskerville/bubblegum.git
