@@ -65,10 +65,10 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
-nnoremap <C-y> "+y
-vnoremap <C-y> "+y
-nnoremap <C-p> "+gP
-vnoremap <C-p> "+gP
+" nnoremap <C-y> "+y
+" vnoremap <C-y> "+y
+" nnoremap <C-p> "+gP
+" vnoremap <C-p> "+gP
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -185,6 +185,8 @@ set encoding=utf8
 set ffs=unix,dos,mac
 hi Normal guibg=NONE ctermbg=NONE
 
+" copy to clipboard
+vmap <C-c> "+y
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

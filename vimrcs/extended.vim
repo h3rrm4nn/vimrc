@@ -33,7 +33,8 @@ execute 'map <leader>e :e!' join([g:vimrcpath,'/my_configs.vim'],'') '<cr>'
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 try
-    set undodir=join([g:vimrcpath,'/temp_dirs/undodir'],'')
+    " set undodir=join([g:vimrcpath,'/temp_dirs/undodir'],'')
+    set undodir=~/vimrc/temp_dirs/undodir
     set undofile
 catch
 endtry
