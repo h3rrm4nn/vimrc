@@ -1,111 +1,111 @@
 [submodule "sources_non_forked/ack.vim"]
-	path = sources_non_forked/ack.vim
+	path = modules/ack.vim
 	url = https://github.com/mileszs/ack.vim
 [submodule "sources_non_forked/AutoComplPop"]
-	path = sources_non_forked/AutoComplPop
+	path = modules/AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop
 [submodule "sources_non_forked/bufexplorer"]
-	path = sources_non_forked/bufexplorer
+	path = modules/bufexplorer
 	url = https://github.com/corntrace/bufexplorer
 [submodule "sources_non_forked/clang_complete"]
-	path = sources_non_forked/clang_complete
+	path = modules/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete
 [submodule "sources_non_forked/ctrlp.vim"]
-	path = sources_non_forked/ctrlp.vim
+	path = modules/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
 [submodule "sources_non_forked/mru.vim"]
-	path = sources_non_forked/mru.vim
+	path = modules/mru.vim
 	url = https://github.com/vim-scripts/mru.vim
 [submodule "sources_non_forked/nerdtree"]
-	path = sources_non_forked/nerdtree
+	path = modules/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "sources_non_forked/open_file_under_cursor.vim"]
-	path = sources_non_forked/open_file_under_cursor.vim
+	path = modules/open_file_under_cursor.vim
 	url = https://github.com/amix/open_file_under_cursor.vim
 [submodule "sources_non_forked/peaksea"]
-	path = sources_non_forked/peaksea
+	path = modules/peaksea
 	url = https://github.com/vim-scripts/peaksea
 [submodule "sources_non_forked/snipmate-snippets"]
-	path = sources_non_forked/snipmate-snippets
+	path = modules/snipmate-snippets
 	url = https://github.com/scrooloose/snipmate-snippets
 [submodule "sources_non_forked/syntastic"]
-	path = sources_non_forked/syntastic
+	path = modules/syntastic
 	url = https://github.com/scrooloose/syntastic
 [submodule "sources_non_forked/tabline.vim"]
-	path = sources_non_forked/tabline.vim
+	path = modules/tabline.vim
 	url = https://github.com/mkitt/tabline.vim
 [submodule "sources_non_forked/taglist.vim"]
-	path = sources_non_forked/taglist.vim
+	path = modules/taglist.vim
 	url = https://github.com/vim-scripts/taglist.vim
 [submodule "sources_non_forked/tlib"]
-	path = sources_non_forked/tlib
+	path = modules/tlib
 	url = https://github.com/vim-scripts/tlib
 [submodule "sources_non_forked/VHDL-indent-93-syntax"]
-	path = sources_non_forked/VHDL-indent-93-syntax
+	path = modules/VHDL-indent-93-syntax
 	url = https://github.com/vim-scripts/VHDL-indent-93-syntax
 [submodule "sources_non_forked/vim-addon-mw-utils"]
-	path = sources_non_forked/vim-addon-mw-utils
+	path = modules/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils
 [submodule "sources_non_forked/vim-airline"]
-	path = sources_non_forked/vim-airline
+	path = modules/vim-airline
 	url = https://github.com/bling/vim-airline
 [submodule "sources_non_forked/vim-airline-themes"]
-	path = sources_non_forked/vim-airline-themes
+	path = modules/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "sources_non_forked/vim-colors-solarized"]
-	path = sources_non_forked/vim-colors-solarized
+	path = modules/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
 [submodule "sources_non_forked/vim-commentary"]
-	path = sources_non_forked/vim-commentary
+	path = modules/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule "sources_non_forked/vim-easy-align"]
-	path = sources_non_forked/vim-easy-align
+	path = modules/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "sources_non_forked/vim-fugitive"]
-	path = sources_non_forked/vim-fugitive
+	path = modules/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 [submodule "sources_non_forked/vim-indent-object"]
-	path = sources_non_forked/vim-indent-object
+	path = modules/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
 [submodule "sources_non_forked/vim-multiple-cursors"]
-	path = sources_non_forked/vim-multiple-cursors
+	path = modules/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
 [submodule "sources_non_forked/vim-repeat"]
-	path = sources_non_forked/vim-repeat
+	path = modules/vim-repeat
 	url = https://github.com/tpope/vim-repeat
 [submodule "sources_non_forked/vim-snipmate"]
-	path = sources_non_forked/vim-snipmate
+	path = modules/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate
 [submodule "sources_non_forked/vim-snippets"]
-	path = sources_non_forked/vim-snippets
+	path = modules/vim-snippets
 	url = https://github.com/honza/vim-snippets
 [submodule "sources_non_forked/vim-unimpaired"]
-	path = sources_non_forked/vim-unimpaired
+	path = modules/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
 [submodule "sources_non_forked/YankRing.vim"]
-	path = sources_non_forked/YankRing.vim
+	path = modules/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim
 [submodule "sources_non_forked/darcula"]
-	path = sources_non_forked/darcula
+	path = modules/darcula
 	url = https://github.com/blueshirts/darcula.git
 [submodule "sources_non_forked/vim-railscasts-theme"]
-	path = sources_non_forked/vim-railscasts-theme
+	path = modules/vim-railscasts-theme
 	url = https://github.com/jpo/vim-railscasts-theme.git
 [submodule "sources_non_forked/gruvbox"]
-	path = sources_non_forked/gruvbox
+	path = modules/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
 [submodule "sources_non_forked/urxvt-vim-insert"]
-	path = sources_non_forked/urxvt-vim-insert
+	path = modules/urxvt-vim-insert
 	url = https://github.com/seletskiy/urxvt-vim-insert.git
 [submodule "sources_non_forked/vimtex"]
-	path = sources_non_forked/vimtex
+	path = modules/vimtex
 	url = https://github.com/lervag/vimtex.git
 [submodule "sources_non_forked/nord-vim"]
-	path = sources_non_forked/nord-vim
+	path = modules/nord-vim
 	url = git://github.com/arcticicestudio/nord-vim.git
 [submodule "sources_non_forked/julia-vim"]
-	path = sources_non_forked/julia-vim
+	path = modules/julia-vim
 	url = git://github.com/JuliaEditorSupport/julia-vim.git
 [submodule "sources_non_forked/bubblegum"]
-	path = sources_non_forked/bubblegum
+	path = modules/bubblegum
 	url = https://github.com/baskerville/bubblegum.git

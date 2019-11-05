@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important: 
+" Important:
 "       This requries that you install https://github.com/amix/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -8,8 +8,8 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect(join([g:vimrcpath, '/sources_forked/{}'], ''))
-call pathogen#infect(join([g:vimrcpath, '/sources_non_forked/{}'], ''))
+call pathogen#infect(join([g:vimrcpath, '/modules/{}'], ''))
+call pathogen#infect(join([g:vimrcpath, '/sources/{}'], ''))
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
@@ -91,14 +91,6 @@ let g:multi_cursor_next_key="\<C-s>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => surround.vim config
-" Annotate strings with gettext http://amix.dk/blog/post/19678
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap Si S(i_<esc>f)
-au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " let g:airline_theme="luna"
@@ -114,7 +106,7 @@ let g:syntastic_python_checkers=['pyflakes']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => clang_complete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:clang_library_path='/usr/lib/x86_64-linux-gnu'
+let g:clang_library_path='/usr/lib/llvm-6.0/lib/libclang.so.1'
 let g:clang_complete_auto = 1
 " set conceallevel=2
 " set concealcursor=vin
@@ -139,19 +131,10 @@ let g:acp_behaviorKeywordLength = 3
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Solarized
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:solarized_termcolors=256
-" syntax enable
-" set background=dark
-" colorscheme solarized
-let g:solarized_termtrans=1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-hdl
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configure the project file
-" This shitty plugin is not working, I assume it is related to the python version
+" This plugin is not working, I assume it is related to the python version
 " let g:vimhdl_conf_file = '~/Simulation/fsd.hardware/test.prj'
 " Tell Syntastic to use vim-hdl
 " let g:syntastic_vhdl_checkers = ['vimhdl']
@@ -167,43 +150,3 @@ let g:vimtex_view_method = 'mupdf'
 let g:vimtex_compiler_latexmk = {'callback' : 0} 
 let g:tex_conceal = ""
 " set the textwidth for latex files
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vimify
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:spotify_token='ZTMzNDFmMWM1OGNkNGYyNzkwODkzNGIzOTA4NzQ2NTE6MWY0YzU1ZTRkZWI2NGM5NTk4YWJhZDEwYzdmYWVmZDQ='
-
-
-
-
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" " => Vim-Latex
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-" filetype plugin on
-
-" " set the textwidth for latex files
-" autocmd FileType tex setlocal textwidth=80
-
-" " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" " can be called correctly.
-" "set shellslash
-
-" " IMPORTANT: grep will sometimes skip displaying the file name if you
-" " search in a singe file. This will confuse Latex-Suite. Set your grep
-" " program to always generate a file-name.
-" set grepprg=grep\ -nH\ $*
-
-" " OPTIONAL: This enables automatic indentation as you type.
-" filetype indent on
-
-" " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" " The following changes the default filetype back to 'tex':
-" let g:tex_flavor='latex'
-
-" autocmd Filetype tex setlocal nofoldenable
-" let g:Tex_DefaultTargetFormat='pdf'
-
-" " Taglist modification required for ctags and VHDL
-" let g:tlist_vhdl_settings   = 'vhdl;d:package declarations;b:package bodies;e:entities;a:architecture specifications;t:type declarations;p:processes;f:functions;m:port maps;r:procedures'
